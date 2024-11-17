@@ -15,3 +15,12 @@
         - import: File To needed for import
         - providers: Services available for injection
         - bootstrap: root component that Angular should bootstrap when the application starts
+
+<h4>2) Second Commit:</h4>
+
+- Creating new Component: ng g c home
+    - Standalone it doesn`t require to register
+    - NgModule We need to register in module file
+- Routing
+    - App Component file is main, Here we can define Header, Footer & router-outlet
+    - In routing file we need to register url path & component
