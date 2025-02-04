@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
-  {path: '', redirectTo:'/home' ,pathMatch: 'full'}, //Default HomePage will redirect to home page
-  //{path: '', component: HomeComponent}, //It will not redirect
-  {path: 'app/home', component: HomeComponent}, // Define url path & it`s component
+  {path: '', component: HomeComponent}, //It will not redirect
+  {path: 'about', component: AboutComponent}
 ];
 
 @NgModule({

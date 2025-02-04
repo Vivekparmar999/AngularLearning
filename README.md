@@ -1,3 +1,6 @@
+Node version - 20.12.2
+Run Project - npm run ng serve
+
 <h2>Angular Learning</h2>
 
 <h4>1) Initial Commit:</h4>
@@ -24,3 +27,13 @@
 - Routing
     - App Component file is main, Here we can define Header, Footer & router-outlet
     - In routing file we need to register url path & component
+    - routerLink is used for navigation between components
+    - We need Import RouterModule/RouterLink in Standalone typescript file
+    - In NgModule RouterModule is already present by default
+- Injection (Home.Component.ts)
+    - There are 2 ways for Dependency Injection
+    - Constuctor & injection method
+
+
+<h4>Reference Links</h4>
+- https://www.youtube.com/watch?v=_PQ7NSppj3Q&t=4161s
