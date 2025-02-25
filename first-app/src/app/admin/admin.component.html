@@ -1,0 +1,58 @@
+<div class="card">
+    <div class="card-header">Add Course</div>
+    <div class="card-body">
+        <!-- Reactive Form  -->
+        <form #courseForm="ngForm" (ngSubmit)="onSubmit(courseForm)">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input name="title" type="text" class="form-control" id="title" placeholder="Enter Title"
+                    #title="ngModel" [(ngModel)]="model.title" required>
+                <!-- #title="ngModel" == It tells Angular that #title should be assigned the ngModel directive instance, not the native input element.-->
+                <div *ngIf="title.invalid && title.touched" class="text-danger">
+                    Title is required
+                </div>
+
+                <!--        Another way of NgIf
+                @if(title.invalid && title.touched){
+                    <div class="text-danger">
+                        Title is required
+                    </div>
+                }-->
+
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="description" rows="3" name="description"
+                    placeholder="Enter Description" #description="ngModel" [(ngModel)]="model.description" required>
+                </textarea>
+                <div *ngIf="description.invalid && description.touched" class="text-danger">
+                    Description is required
+                </div>
+            </div>
+            <div>
+                <input
+                type="file"
+                id="image"
+                name="image"
+                accept="image/*"
+                (change)="onFileSelected($event)"
+                ngModel
+                required
+                [multiple]="false"
+                >
+            </div>
+
+            <div *ngIf="cover" class="image" align="right">
+                <img [src]="cover" alt="" />
+            </div>
+
+            <div *ngIf="showImageError" class="text-danger">
+                Image is required.
+            </div>
+
+            <div class="m-3" align="center">
+                <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -34,6 +34,18 @@ Run Project - npm run ng serve
     - There are 2 ways for Dependency Injection
     - Constuctor & injection method
 
+<h4>3) Third Commit:</h4>
+
+- Routing (about.component.ts)
+    - passing param from one page to another
+- Lazy Loading (app-routes.module.ts, app.module.ts)
+    - User don`t have to wait for the elments to download when they activate a route
+    - https://v17.angular.io/guide/lazy-loading-ngmodules
+- Admin Panel (admin.component.ts)
+    - Forms
+        - Reactive Forms (Complex, dynamic forms)
+        - Template Driven Form/FormsModule (Simple, small-scale forms)
+    - Adding Reactive Form & it`s validation
 
 <h4>Reference Links</h4>
 - https://www.youtube.com/watch?v=_PQ7NSppj3Q&t=4161s
