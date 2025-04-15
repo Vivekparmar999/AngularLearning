@@ -47,5 +47,21 @@ Run Project - npm run ng serve
         - Template Driven Form/FormsModule (Simple, small-scale forms)
     - Adding Reactive Form & it`s validation
 
+<h4>4) Fourth Commit:</h4>
+
+- Design of New HomePage
+    - Navbar (header.component.ts)
+        - Standalone - Will need to Import RouterLink in Component.ts file
+        - NgModule - Import not needed
+- In NgModule Project if it has A Component is used in B & C NgModules then we should create SharedModule for A component.Inside SharedModule we can add declarations of that A component.We can import that in SharedModules in B & C NgModules (CoursesComponent.ts)
+- Input Decorator - Transfer Data from Parent Component to Child Component Dynamically
+- Output Decorator - Transfer Data from Child Component to Parent Component using 
+- Added Bootstrap to the project
+    - Added it`s packages (bootstrap & bootstrap-icons)
+    - Added bootstrap css & js file into angular.json file
+    - imported bootstrap-icons in styles.scss
+- Using LocalStorage to Store data
+
+
 <h4>Reference Links</h4>
 - https://www.youtube.com/watch?v=_PQ7NSppj3Q&t=4161s
